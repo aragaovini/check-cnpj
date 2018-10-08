@@ -13,3 +13,5 @@ class Button extends Component {
     return <button onClick={() => this.handleClick}>{text}</button>;
   }
 }
+
+export default Button;

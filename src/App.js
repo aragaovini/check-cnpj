@@ -1,13 +1,15 @@
 import React, { Component } from "react";
+import { Switch, Route } from "react-router-dom";
 import "./App.css";
+import Home from './pages/home';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1>Check Cnpj</h1>
-        </header>
+        <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
       </div>
     );
   }
