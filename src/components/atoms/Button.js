@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Button extends Component {
   handleClick = () => {
     const { clickMethod } = this.props;
-    if (clickMethod && typeof clickMethod === "function") {
+    if (clickMethod && typeof clickMethod === 'function') {
       clickMethod();
     }
   };
