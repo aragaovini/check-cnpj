@@ -2,6 +2,7 @@ import React from 'react';
 import Title from '../../components/atoms/Title';
 import Button from '../../components/atoms/Button';
 import styled from 'styled-components';
+import MaterialIcon from 'material-icons-react';
 
 const AppFrame = styled.div`
     width: 100%;
@@ -33,6 +34,9 @@ const Home = (props) => {
         <BackgroundContainer>
             <AppFrame>
                 <FlexBlock/>
+                <div className="icon-start-screen">
+                    <MaterialIcon color="#fff" size="40" icon="trending_up" />
+                </div>
                 <Title title="Cotação de seguros" />
                 <p className="title-description">Solução inovadora a líder de mercado</p>
                 <div className="container-buttons">

@@ -24,6 +24,10 @@
     margin: 18px;
 }
 
+.icon-start-screen {
+    margin: 28px;
+}
+
 .button-default .material-icons {
     font-size: 14px;
     margin-top: 5px;
@@ -32,4 +36,9 @@
 .button-default:hover {
     opacity: 0.9;
     cursor: pointer;
+}
+
+.code-container {
+    color: #fff;
+    font-size: 14px;
 }
