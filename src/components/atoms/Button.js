@@ -1,4 +1,20 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+import MaterialIcon from 'material-icons-react';
+
+const WhiteButton = styled.button`
+  background-color: #fff;
+  color: #a536ff;
+`;
+
+const PurpleButton = styled.button`
+  background-color: #a536ff;
+  color: #fff;
+`;
+
+const FlexBlock = () => {
+    return <span style={{flex: 1}}/>
+}
 
 class Button extends Component {
   handleClick = () => {
@@ -9,8 +25,24 @@ class Button extends Component {
   };
 
   render() {
-    const { text } = this.props;
-    return <button onClick={() => this.handleClick}>{text}</button>;
+    const { text, type } = this.props;
+    if (type === 'white') {
+      return (
+        <WhiteButton className="button-default" onClick={() => this.handleClick()}>
+          {text}
+          <FlexBlock />
+          <MaterialIcon color="#a536ff" size="22" icon="arrow_forward" />
+        </WhiteButton>
+      );
+    } else {
+      return (
+        <PurpleButton className="button-default" onClick={() => this.handleClick()}>
+          {text}
+          <FlexBlock />
+          <MaterialIcon color="#a536ff" size="22" icon="arrow_forward" />
+        </PurpleButton>
+      );
+    }
   }
 }
 

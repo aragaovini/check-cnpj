@@ -21,22 +21,26 @@ const BackgroundContainer = styled.div`
 `;
 
 const FlexBlock = () => {
-    return <span style={{flex: 1}}/>
+    return <span style={{flex: 1}}/>;
 }
 
-const Home = () => {
+const start = ({history}) => {
+    history.push("/check-cnpj");
+}
+
+const Home = (props) => {
     return (
         <BackgroundContainer>
             <AppFrame>
                 <FlexBlock/>
                 <Title title="Cotação de seguros" />
                 <p className="title-description">Solução inovadora a líder de mercado</p>
-                <div>
-                    <Button text="Iniciar" />
+                <div className="container-buttons">
+                    <Button type="white" text="Iniciar" clickMethod={() => start(props)} />
                 </div>
             </AppFrame>
         </BackgroundContainer>
-    )
+    );
 }
 
 export default Home;
