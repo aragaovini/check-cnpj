@@ -2,12 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import MaterialIcon from 'material-icons-react';
 
-const ButtonDefault = styled.button`
-  ${props => props.type === "white" ? 
-  "background-color: #a536ff; color: #fff;"
-  : "background-color: #fff;; color: #a536ff"};
-`;
-
 const FlexBlock = () => {
     return <span style={{flex: 1}}/>
 }
@@ -21,12 +15,17 @@ class Button extends Component {
   };
 
   render() {
-    const { text } = this.props;
+    const { text, type } = this.props;
+    const ButtonDefault = styled.button`
+      ${type === "white" ? 
+      "background: #fff !important; color: #a536ff;" : "background: #68d4c5; color: #fff;"};
+    `;
+
     return (
       <ButtonDefault className="button-default" onClick={() => this.handleClick()}>
         {text}
         <FlexBlock />
-        <MaterialIcon color="#a536ff" size="22" icon="arrow_forward" />
+        <MaterialIcon color={type === 'white' ? '#a536ff' : '#fff'} size="22" icon="arrow_forward" />
       </ButtonDefault>
     );
   }
