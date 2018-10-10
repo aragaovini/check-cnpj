@@ -2,14 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import MaterialIcon from 'material-icons-react';
 
-const WhiteButton = styled.button`
-  background-color: #fff;
-  color: #a536ff;
-`;
-
-const PurpleButton = styled.button`
-  background-color: #a536ff;
-  color: #fff;
+const ButtonDefault = styled.button`
+  ${props => props.type === "white" ? 
+  "background-color: #a536ff; color: #fff;"
+  : "background-color: #fff;; color: #a536ff"};
 `;
 
 const FlexBlock = () => {
@@ -25,24 +21,14 @@ class Button extends Component {
   };
 
   render() {
-    const { text, type } = this.props;
-    if (type === 'white') {
-      return (
-        <WhiteButton className="button-default" onClick={() => this.handleClick()}>
-          {text}
-          <FlexBlock />
-          <MaterialIcon color="#a536ff" size="22" icon="arrow_forward" />
-        </WhiteButton>
-      );
-    } else {
-      return (
-        <PurpleButton className="button-default" onClick={() => this.handleClick()}>
-          {text}
-          <FlexBlock />
-          <MaterialIcon color="#a536ff" size="22" icon="arrow_forward" />
-        </PurpleButton>
-      );
-    }
+    const { text } = this.props;
+    return (
+      <ButtonDefault className="button-default" onClick={() => this.handleClick()}>
+        {text}
+        <FlexBlock />
+        <MaterialIcon color="#a536ff" size="22" icon="arrow_forward" />
+      </ButtonDefault>
+    );
   }
 }
 
