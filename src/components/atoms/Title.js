@@ -9,7 +9,7 @@ const TitleDefault = styled.h1`
 
 const Title = (props) => {
     const { title } = props;
-    return <TitleDefault>{ title }</TitleDefault>;
+    return <TitleDefault className="title">{ title }</TitleDefault>;
 }
 
 export default Title;

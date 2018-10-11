@@ -28,12 +28,12 @@ const FlexBlock = () => {
 const BannerHeader = (props) => {
     const { title, code, image } = props;
     return (
-        <BackgroundContainer>
+        <BackgroundContainer className="banner-header">
             <IconContainer>
                 <MaterialIcon color="#fff" size="40" icon="trending_up" />
             </IconContainer>
             <div>
-                <TitleDescription title={title} />
+                <TitleDescription className="title-container" title={title} />
                 <div className="code-container">{code}</div>
             </div>
             <FlexBlock />

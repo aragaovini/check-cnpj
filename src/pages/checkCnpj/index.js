@@ -29,7 +29,7 @@ class CheckCnpj extends Component {
                 <BannerHeader title="Nova cotação" code="#0980" image={Avatar}/>
                 <TitleInput>Buscar por CNPJ ou empresa</TitleInput>
                 <div className="container-input">
-                    <InputMask onChange={() => this.handleChange('cnpj')} {...this.props} mask="99.999.999/9999-99" maskChar=" " />
+                    <InputMask onChange={() => this.handleChange('cnpj')} mask="99.999.999/9999-99" maskChar=" " />
                 </div>
                 <Button text="Ok" clickMethod={() => {}}/>
             </div>
