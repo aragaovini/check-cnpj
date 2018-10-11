@@ -12,14 +12,16 @@ const TitleInput = styled.h3`
 
 class CheckCnpj extends Component {
     state = {
-        cnpj: ''
+        cnpj: '',
+        noMaskCnpj: ''
     }
 
-    handleChange = name => event => {
-        const inputValue = event.target.value
-        const noMaskCnpj = inputValue ? inputValue.replace(/[^\d]/g, '') : '';
+    handleChange = event => {
+        const cnpj = event.target.value
+        const noMaskCnpj = cnpj ? cnpj.replace(/[^\d]/g, '') : '';
         this.setState({
-            [name]: noMaskCnpj,
+            cnpj,
+            noMaskCnpj,
         });
     };
     
@@ -29,7 +31,7 @@ class CheckCnpj extends Component {
                 <BannerHeader title="Nova cotação" code="#0980" image={Avatar}/>
                 <TitleInput>Buscar por CNPJ ou empresa</TitleInput>
                 <div className="container-input">
-                    <InputMask onChange={() => this.handleChange('cnpj')} mask="99.999.999/9999-99" maskChar=" " />
+                    <InputMask className="teste" value={this.state.cnpj} onChange={this.handleChange} mask="99.999.999/9999-99" maskChar=" " />
                 </div>
                 <Button text="Ok" clickMethod={() => {}}/>
             </div>

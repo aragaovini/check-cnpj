@@ -6,13 +6,13 @@ const TitleComponent = <Title title="Cotação" />;
 
 describe('Title', () => {
 
-  it('should render without crashing', () => {
-      const component = shallow(TitleComponent);
-    expect(component).toMatchSnapshot();
-  });
+    it('should render without crashing', () => {
+        const component = shallow(TitleComponent);
+        expect(component).toMatchSnapshot();
+    });
 
-  it('should render one title', () => {
-    const wrapper = shallow(TitleComponent);
-    expect(wrapper.find('.title').length).toBe(1);
-});
+    it('should render one title', () => {
+        const wrapper = shallow(TitleComponent);
+        expect(wrapper.find('.title').length).toBe(1);
+    });
 });
