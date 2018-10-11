@@ -22,14 +22,14 @@ describe('Check-Cnpj Page', () => {
 
     it('should state cnpj be right', () => {
         const wrapper = shallow(Page);
-        const input = wrapper.find('.teste');
+        const input = wrapper.find('.cnpj-input');
         input.simulate('change', {target: {value: '43.454.362/0001-65'}});
         expect(wrapper.state().cnpj).toBe('43.454.362/0001-65');
     });
 
     it('should state be empty', () => {
         const wrapper = shallow(Page);
-        const input = wrapper.find('.teste');
+        const input = wrapper.find('.cnpj-input');
         input.simulate('change', {target: {value: ''}});
         expect(wrapper.state().cnpj).toBe('');
     });

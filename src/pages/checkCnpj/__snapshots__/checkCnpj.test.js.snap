@@ -30,7 +30,7 @@ ShallowWrapper {
           className="container-input"
         >
           <InputElement
-            className="teste"
+            className="cnpj-input"
             mask="99.999.999/9999-99"
             maskChar=" "
             onChange={[Function]}
@@ -75,7 +75,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <InputElement
-            className="teste"
+            className="cnpj-input"
             mask="99.999.999/9999-99"
             maskChar=" "
             onChange={[Function]}
@@ -89,7 +89,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "className": "teste",
+            "className": "cnpj-input",
             "mask": "99.999.999/9999-99",
             "maskChar": " ",
             "onChange": [Function],
@@ -135,7 +135,7 @@ ShallowWrapper {
             className="container-input"
           >
             <InputElement
-              className="teste"
+              className="cnpj-input"
               mask="99.999.999/9999-99"
               maskChar=" "
               onChange={[Function]}
@@ -180,7 +180,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <InputElement
-              className="teste"
+              className="cnpj-input"
               mask="99.999.999/9999-99"
               maskChar=" "
               onChange={[Function]}
@@ -194,7 +194,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "className": "teste",
+              "className": "cnpj-input",
               "mask": "99.999.999/9999-99",
               "maskChar": " ",
               "onChange": [Function],

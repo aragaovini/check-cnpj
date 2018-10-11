@@ -1,0 +1,375 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page should render without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Home />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <styled.div>
+        <FlexBlock />
+        <div
+          className="icon-start-screen"
+        >
+          <MaterialIcon
+            color="#fff"
+            icon="trending_up"
+            size="40"
+          />
+        </div>
+        <Title
+          title="Cotação de seguros"
+        />
+        <p
+          className="title-description"
+        >
+          Solução inovadora a líder de mercado
+        </p>
+        <div
+          className="container-buttons"
+        >
+          <Button
+            clickMethod={[Function]}
+            id="button-start"
+            text="Iniciar"
+            type="white"
+          />
+        </div>
+      </styled.div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <FlexBlock />,
+          <div
+            className="icon-start-screen"
+          >
+            <MaterialIcon
+              color="#fff"
+              icon="trending_up"
+              size="40"
+            />
+          </div>,
+          <Title
+            title="Cotação de seguros"
+          />,
+          <p
+            className="title-description"
+          >
+            Solução inovadora a líder de mercado
+          </p>,
+          <div
+            className="container-buttons"
+          >
+            <Button
+              clickMethod={[Function]}
+              id="button-start"
+              text="Iniciar"
+              type="white"
+            />
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <MaterialIcon
+              color="#fff"
+              icon="trending_up"
+              size="40"
+            />,
+            "className": "icon-start-screen",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "color": "#fff",
+              "icon": "trending_up",
+              "size": "40",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "title": "Cotação de seguros",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Solução inovadora a líder de mercado",
+            "className": "title-description",
+          },
+          "ref": null,
+          "rendered": "Solução inovadora a líder de mercado",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Button
+              clickMethod={[Function]}
+              id="button-start"
+              text="Iniciar"
+              type="white"
+            />,
+            "className": "container-buttons",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "clickMethod": [Function],
+              "id": "button-start",
+              "text": "Iniciar",
+              "type": "white",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <styled.div>
+          <FlexBlock />
+          <div
+            className="icon-start-screen"
+          >
+            <MaterialIcon
+              color="#fff"
+              icon="trending_up"
+              size="40"
+            />
+          </div>
+          <Title
+            title="Cotação de seguros"
+          />
+          <p
+            className="title-description"
+          >
+            Solução inovadora a líder de mercado
+          </p>
+          <div
+            className="container-buttons"
+          >
+            <Button
+              clickMethod={[Function]}
+              id="button-start"
+              text="Iniciar"
+              type="white"
+            />
+          </div>
+        </styled.div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <FlexBlock />,
+            <div
+              className="icon-start-screen"
+            >
+              <MaterialIcon
+                color="#fff"
+                icon="trending_up"
+                size="40"
+              />
+            </div>,
+            <Title
+              title="Cotação de seguros"
+            />,
+            <p
+              className="title-description"
+            >
+              Solução inovadora a líder de mercado
+            </p>,
+            <div
+              className="container-buttons"
+            >
+              <Button
+                clickMethod={[Function]}
+                id="button-start"
+                text="Iniciar"
+                type="white"
+              />
+            </div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <MaterialIcon
+                color="#fff"
+                icon="trending_up"
+                size="40"
+              />,
+              "className": "icon-start-screen",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "color": "#fff",
+                "icon": "trending_up",
+                "size": "40",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "title": "Cotação de seguros",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Solução inovadora a líder de mercado",
+              "className": "title-description",
+            },
+            "ref": null,
+            "rendered": "Solução inovadora a líder de mercado",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Button
+                clickMethod={[Function]}
+                id="button-start"
+                text="Iniciar"
+                type="white"
+              />,
+              "className": "container-buttons",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "clickMethod": [Function],
+                "id": "button-start",
+                "text": "Iniciar",
+                "type": "white",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

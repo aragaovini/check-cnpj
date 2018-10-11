@@ -40,7 +40,7 @@ const Home = (props) => {
                 <Title title="Cotação de seguros" />
                 <p className="title-description">Solução inovadora a líder de mercado</p>
                 <div className="container-buttons">
-                    <Button type="white" text="Iniciar" clickMethod={() => start(props)} />
+                    <Button id="button-start" type="white" text="Iniciar" clickMethod={() => start(props)} />
                 </div>
             </AppFrame>
         </BackgroundContainer>
