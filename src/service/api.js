@@ -5,9 +5,9 @@ const api = axios.create({
     headers: {'ACESS_TOKEN': 23456789}
 })
 
-export default class CotacaoSeguroService {
+class CotacaoSeguroService {
 
-    getInfo = (cnpj) => {
+    getInfo(cnpj) {
         return api.get(`/quote/${cnpj}`).then(response => response.data).catch(err => {
             if (err.response.status === 404) {
                 throw 'Não foi possível encontrar as informações.';
@@ -16,3 +16,5 @@ export default class CotacaoSeguroService {
     }
 
 }
+
+export default new CotacaoSeguroService();
