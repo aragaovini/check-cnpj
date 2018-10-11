@@ -1,11 +1,9 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import CheckCnpj from './';
 import BannerHeader from '../../components/molecules/BannerHeader';
-import InputMask from 'react-input-mask';
 
 const Page = <CheckCnpj />;
-const Input = <InputMask />;
 
 describe('Check-Cnpj Page', () => {
 
